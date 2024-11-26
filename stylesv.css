@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #4e9f3d, #78d53a);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+  
+  .feature {
+    background: white;
+    border-radius: 12px;
+    width: 28%;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature h2 {
+    font-size: 2em;
+    color: #4e9f3d;
+    margin-bottom: 15px;
+  }
+  
+  .feature p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  .feature a {
+    color: #78d53a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .feature a:hover {
+    color: #4e9f3d;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #78d53a;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .feature {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature {
+      width: 100%;
+    }
+  }
+  
+  /* Estilo para o resumo e o vídeo */
+  .documentary {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .documentary iframe {
+    width: 80%;
+    height: 450px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .documentary p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+  

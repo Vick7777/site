@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matemática: O Mundo dos Números</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #009cde, #66ccff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 10px;
+    }
+
+    .topic {
+      background: white;
+      border-radius: 12px;
+      width: 28%;
+      margin: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .topic:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .topic h2 {
+      font-size: 2em;
+      color: #009cde;
+      margin-bottom: 15px;
+    }
+
+    .topic p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .topic a {
+      color: #009cde;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .topic a:hover {
+      color: #66ccff;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: #009cde;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .topic {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .topic {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Matemática: O Mundo dos Números</h1>
+    <p>Descubra os conceitos, a beleza e a utilidade da Matemática no nosso cotidiano!</p>
+  </header>
+
+  <div class="container">
+    <!-- Seção Álgebra -->
+    <div class="topic">
+      <h2>Álgebra</h2>
+      <p>A Álgebra é o ramo da Matemática que lida com números e operações através de letras e símbolos. É fundamental para resolver equações e entender os padrões numéricos.</p>
+      <a href="https://www.khanacademy.org/math/algebra" target="_blank">Saiba mais sobre Álgebra</a>
+    </div>
+
+    <!-- Seção Geometria -->
+    <div class="topic">
+      <h2>Geometria</h2>
+      <p>A Geometria estuda as propriedades das figuras e formas no espaço, como pontos, linhas, superfícies e sólidos. É essencial para a arquitetura, engenharia e design.</p>
+      <a href="https://www.khanacademy.org/math/geometry" target="_blank">Saiba mais sobre Geometria</a>
+    </div>
+
+    <!-- Seção Cálculo -->
+    <div class="topic">
+      <h2>Cálculo</h2>
+      <p>O Cálculo é o estudo das taxas de variação e das mudanças. Ele é amplamente utilizado em física, economia e computação, sendo a base para muitas descobertas científicas.</p>
+      <a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Saiba mais sobre Cálculo</a>
+    </div>
+
+    <!-- Seção Estatística -->
+    <div class="topic">
+      <h2>Estatística</h2>
+      <p>A Estatística é o ramo da Matemática que analisa dados. Ela nos ajuda a entender tendências, fazer previsões e tomar decisões baseadas em informações quantitativas.</p>
+      <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Saiba mais sobre Estatística</a>
+    </div>
+
+    <!-- Seção Probabilidade -->
+    <div class="topic">
+      <h2>Probabilidade</h2>
+      <p>A Probabilidade estuda a chance de eventos acontecerem. É amplamente aplicada em jogos de azar, análise de risco e ciências atuariais, entre outros campos.</p>
+      <a href="https://www.khanacademy.org/math/probability" target="_blank">Saiba mais sobre Probabilidade</a>
+    </div>
+
+    <!-- Seção Números Primos -->
+    <div class="topic">
+      <h2>Números Primos</h2>
+      <p>Os Números Primos são aqueles que têm exatamente dois divisores positivos: 1 e ele mesmo. São fundamentais para a Teoria dos Números e a criptografia moderna.</p>
+      <a href="https://www.khanacademy.org/math/arithmetic/x8910e6a7d11e5c61:prime-factorization" target="_blank">Saiba mais sobre Números Primos</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Matemática: O Mundo dos Números | <a href="#">Política de Privacidade</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Principal Criativo</title>
+<style>
+    /* Estilo geral */
+    body {
+        font-family: 'Poppins', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #be31be, #11031d);
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Título da página */
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 600px;  /* Ajustado para ser um pouco mais alto */
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        letter-spacing: 1px;
+    }
+
+    /* Container principal */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85%;
+        max-width: 1200px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Texto de introdução */
+    .intro-text {
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+        margin: 30px 0;
+        max-width: 800px;
+        line-height: 1.6;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Bloco de imagens das páginas */
+    .page-images {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .page-images div {
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        width: 230px;
+        height: 230px;  /* Definindo uma altura fixa para o bloco */
+    }
+
+    .page-images div:hover {
+        transform: translateY(-10px);
+    }
+
+    .page-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    .page-images div:hover img {
+        transform: scale(1.1);
+    }
+
+    .page-images a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+        background: linear-gradient(135deg, #50c9c3, #4a90e2);
+        border-radius: 8px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .page-images div:hover a {
+        opacity: 1;
+    }
+
+    .page-images p {
+        font-size: 14px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .page-images h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .page-images {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .intro-text {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+    <h1>Menu Principal Criativo</h1>
+
+    <div class="container">
+        <!-- Texto de introdução -->
+        <div class="intro-text">
+            <p>Bem-vindo ao nosso Menu Principal Criativo! Explore nossas páginas interativas e encontre conteúdos incríveis! Escolha entre as opções abaixo e aproveite a jornada. Cada imagem representa uma página cheia de novidades!</p>
+        </div>
+        
+        <!-- Imagens das páginas 1 a 9 -->
+        <div class="page-images">
+            <div>
+                <a href="pagina1.html">
+                    <img src="imagem1.jpg" alt="Página 1">
+                    Página 1
+                </a>
+                <h3>Título da Página 1</h3>
+                <p>Descubra novidades incríveis em nossa primeira página, cheia de conteúdo interativo!</p>
+            </div>
+            <div>
+                <a href="pagina2.html">
+                    <img src="imagem2.jpg" alt="Página 2">
+                    Página 2
+                </a>
+                <h3>Título da Página 2</h3>
+                <p>Explore as opções da segunda página com artigos fascinantes e interatividade!</p>
+            </div>
+            <div>
+                <a href="pagina3.html">
+                    <img src="imagem3.jpg" alt="Página 3">
+                    Página 3
+                </a>
+                <h3>Título da Página 3</h3>
+                <p>Na terceira página, você encontrará recursos criativos que vão te surpreender!</p>
+            </div>
+            <div>
+                <a href="pagina4.html">
+                    <img src="imagem4.jpg" alt="Página 4">
+                    Página 4
+                </a>
+                <h3>Título da Página 4</h3>
+                <p>A quarta página traz uma combinação de informações úteis e entretenimento!</p>
+            </div>
+            <div>
+                <a href="pagina5.html">
+                    <img src="imagem5.jpg" alt="Página 5">
+                    Página 5
+                </a>
+                <h3>Título da Página 5</h3>
+                <p>Explore tópicos avançados e recursos exclusivos na nossa quinta página.</p>
+            </div>
+            <div>
+                <a href="pagina6.html">
+                    <img src="imagem6.jpg" alt="Página 6">
+                    Página 6
+                </a>
+                <h3>Título da Página 6</h3>
+                <p>A sexta página oferece uma experiência imersiva com conteúdos dinâmicos.</p>
+            </div>
+            <div>
+                <a href="pagina7.html">
+                    <img src="imagem7.jpg" alt="Página 7">
+                    Página 7
+                </a>
+                <h3>Título da Página 7</h3>
+                <p>A sétima página apresenta designs criativos e interações incríveis!</p>
+            </div>
+            <div>
+                <a href="pagina8.html">
+                    <img src="imagem8.jpg" alt="Página 8">
+                    Página 8
+                </a>
+                <h3>Título da Página 8</h3>
+                <p>Encontre inspirações visuais e interativas na oitava página!</p>
+            </div>
+            <div>
+                <a href="pagina9.html">
+                    <img src="imagem9.jpg" alt="Página 9">
+                    Página 9
+                </a>
+                <h3>Título da Página 9</h3>
+                <p>A nona página é cheia de recursos especiais para explorar a criatividade.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

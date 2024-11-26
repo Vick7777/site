@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas do Saber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d1ecf1;
+        }
+
+        td {
+            border: 1px solid #ddd;
+        }
+
+        .table-container {
+            width: 90%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .table-container h2 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .table-container .area-name {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .table-container {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Áreas do Saber
+    </header>
+
+    <!-- Áreas do Saber -->
+    <div class="table-container">
+        <h2>Áreas do Saber</h2>
+        <table>
+            <tr>
+                <th>Área</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td class="area-name">Ciências Humanas</td>
+                <td>Estudo das relações humanas e sociedade, incluindo história, filosofia, geografia, sociologia.</td>
+            </tr>
+            <tr>
+                <td class="area-name">Ciências da Natureza</td>
+                <td>Estudo das relações naturais e sociedade, incluindo biologia, física e química.</td>
+            </tr>
+            <tr>
+                <td class="area-name">Matemática</td>
+                <td>Abordagem lógica e quantitativa para a solução de problemas.</td>
+            </tr>
+            <tr>
+                <td class="area-name">Linguagens</td>
+                <td>Estudo da linguagem, incluindo gramática, literatura e linguística.</td>
+            </tr>
+            <tr>
+                <td class="area-name">IoT (Internet das Coisas)</td>
+                <td>Integração de dispositivos inteligentes conectados à internet.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Disciplinas e Professores -->
+    <div class="table-container">
+        <h2>Disciplinas e Professores</h2>
+        <table>
+            <tr>
+                <th>Área</th>
+                <th>Disciplina</th>
+                <th>Professor</th>
+            </tr>
+            <tr>
+                <td rowspan="4" class="area-name">Ciências Humanas</td>
+                <td>Geografia</td>
+                <td>Professora Thais</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>Professor Victor</td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td>Professora Luiza</td>
+            </tr>
+            <tr>
+                <td>Sociologia</td>
+                <td>Professor Diogo</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="area-name">Ciências da Natureza</td>
+                <td>Biologia</td>
+                <td>Professor Robson</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>Professor Thaioa</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>Professora Francisca</td>
+            </tr>
+            <tr>
+                <td class="area-name">Matemática</td>
+                <td>Matemática</td>
+                <td>Professora Clovis</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="area-name">Linguagens</td>
+                <td>Português</td>
+                <td>Professora Giselle</td>
+            </tr>
+            <tr>
+                <td>Artes</td>
+                <td>Professora Marcela</td>
+            </tr>
+            <tr>
+                <td>Educação Física</td>
+                <td>Professor Ricardo</td>
+            </tr>
+            <tr>
+                <td>Inglês</td>
+                <td>Professora Naja</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Áreas do Saber | Desenvolvido por [Vitória Rocha Machado]. <br>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>

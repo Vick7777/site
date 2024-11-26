@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #3f3232;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+
+        /* Container principal */
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Títulos */
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #3f3232;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        /* Estilo dos hobbies */
+        .hobby {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hobby:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hobby img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hobby p {
+            max-width: 55%;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Link de navegação */
+        a {
+            display: inline-block;
+            text-align: center;
+            margin: 40px auto 0;
+            padding: 12px 30px;
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0c5b9b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3f3232;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 60px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #093a7a;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hobby {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hobby img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hobby p {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Portfólio de Vitória Rocha Machado</h1>
+        <p>Estudante de Ensino Médio Técnico em Internet das Coisas (IoT)</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h2>Hobbies e Curiosidades</h2>
+
+        <!-- Hobby: Dançar -->
+        <div class="hobby">
+            <div>
+                <h3>Dançar</h3>
+                <p>Amo passar o tempo dançando.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.da2063c6c68e7a25146130bb4adc2c64?rik=ww9VX%2bV165RdKw&pid=ImgRaw&r=0" alt="Foto de dança">
+        </div>
+
+        <!-- Hobby: Cantar -->
+        <div class="hobby">
+            <div>
+                <h3>Cantar</h3>
+                <p>Gosto de cantar quando estou sozinha.</p>
+            </div>
+            <img src="https://recordinggift.com/wp-content/uploads/2018/02/header-singer-1920x1280-1.jpg" alt="Foto de música">
+        </div>
+
+        <!-- Hobby: Desenhar -->
+        <div class="hobby">
+            <div>
+                <h3>Desenhar</h3>
+                <p>Gosto de desenhar.</p>
+            </div>
+            <img src="https://colorindo.org/wp-content/uploads/2022/08/como-desenhar-homem-passo-a-passo-1.jpg" alt="Foto de desenho">
+        </div>
+
+        <!-- Hobby: Assistir -->
+        <div class="hobby">
+            <div>
+                <h3>Assistir</h3>
+                <p>Curto muito ficar assistindo séries.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.yeH7T-2rDbWFh-aivoPnaAHaE8?rs=1&pid=ImgDetMain" alt="Foto de uma viagem">
+        </div>
+
+        <!-- Hobby: Jogar video games -->
+        <div class="hobby">
+            <div>
+                <h3>Jogar Video Games</h3>
+                <p>Amo jogar video games com meus amigos.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.da13e040bccb6d4df3e6bbcc4a62e7b4?rik=5ICyjGzJBYM2ow&pid=ImgRaw&r=0" alt="Foto de video games">
+        </div>
+
+        <!-- Link para voltar à página principal -->
+        <a href="file:///C:/Users/Vitoria/Menu%20principal%20-%20site%20.html">Voltar à Página Principal</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Vitória Rocha Machado. Todos os direitos reservados. <br>
+        <a href="https://www.linkedin.com/in/vitoria-machado-b555592b5" target="_blank">LinkedIn</a> | <a href="https://github.com/Vick7777" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>

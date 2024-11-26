@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4a90e2, #50c9c3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        /* Título da página */
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 80px; /* Título mais abaixo */
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Container principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Texto de introdução */
+        .intro-text {
+            font-size: 20px;
+            font-weight: normal;
+            color: #fff;
+            margin: 30px 0;
+            max-width: 800px;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Estilo da grade de blocos */
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            grid-gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .page-block {
+            position: relative;
+            width: 100%;
+            height: 250px; /* Altura dos blocos */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .page-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .page-block .title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .page-grid {
+                grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .intro-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo ao site pessoal de Vitória Rocha Machado</h1>
+
+    <div class="container">
+        <!-- Texto de introdução -->
+        <div class="intro-text">
+            <p>Esse site foi realizado para demostrar meu desenvolvimento no terceiro ano do ensino médio, venha comigo explorar ele. Vamos começar?</p>
+        </div>
+
+        <!-- Grid de blocos -->
+        <div class="page-grid">
+            <a href="file:///C:/Users/Vitoria/Downloads/meu%20curriculo%202%20(1).html">
+                <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.q0ijz1r1qlKGJC_tyo6AxgHaEK?rs=1&pid=ImgDetMain');">
+                    <div class="title">Currículo Pessoal</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Portifolio%201.html">
+                <div class="page-block" style="background-image: url('https://www.tuacarreira.com/wp-content/uploads/2019/09/portfolio.jpg');">
+                    <div class="title">Portifólio Pessoal</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/%C3%81reas%20do%20saber%20(1).html">
+                <div class="page-block" style="background-image: url('https://testvocacional.gratis/wp-content/uploads/2023/03/areas-de-conocimiento.jpg');">
+                    <div class="title">Áreas do Saber</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Linguaguens.html">
+                <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.FgKWDcfzTwevLjhiiWJQTAHaD4?rs=1&pid=ImgDetMain');">
+                    <div class="title">Linguaguens</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Matem%C3%A1tica.html">
+                <div class="page-block" style="background-image: url('https://image.freepik.com/vetores-gratis/fundo-de-quadro-realista-de-matematica_23-2148166959.jpg');">
+                    <div class="title">Matemática</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Internet%20das%20Coisas.html">
+                <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.kGpQOdtFm73hVjYTKa9IDAHaE6?w=512&h=340&rs=1&pid=ImgDetMain');">
+                    <div class="title">Internet das Coisas</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Ci%C3%AAncias%20da%20Natureza.html">
+                <div class="page-block" style="background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2019/11/ciencias-da-natureza.jpg');">
+                    <div class="title">Ciênciasda Natureza</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Ci%C3%AAncias%20Humanas.html">
+                <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP._jAa4OOUpqKA4xIhrfxT2wHaE7?w=800&h=533&rs=1&pid=ImgDetMain');">
+                    <div class="title">Ciências Humanas</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/Formul%C3%A1rio%20de%20satisfa%C3%A7%C3%A3o%20(1).html">
+                <div class="page-block" style="background-image: url('https://1.bp.blogspot.com/-vnqoOWnDHT8/YOT0eOo1woI/AAAAAAAACeg/T034vGrBaTc26jPSPuwY4UmyC-SpH36FwCLcBGAsYHQ/w1200-h630-p-k-no-nu/download.jpg');">
+                    <div class="title">Formulário de Satisfação</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
