@@ -117,19 +117,70 @@
         width: 100%;
       }
     }
+
+    /* Estilo para as imagens */
+    .topic img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+    }
+
+    /* Estilo para a imagem em modo ampliado */
+    .modal {
+      display: none; /* Começa oculto */
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+      overflow: auto;
+      text-align: center;
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Estilo para fechar o modal */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Matemática: O Mundo dos Números</h1>
-    <p>Descubra os conceitos, a beleza e a utilidade da Matemática no nosso cotidiano!</p>
+    <h1>Matemática: Clóvis Serra</h1>
+    <p>Aqui estão os tópicos que explorei com o professor Clovis</p>
   </header>
 
   <div class="container">
     <!-- Seção Álgebra -->
     <div class="topic">
       <h2>Álgebra</h2>
+      <img src="mat3.PNG" alt="Álgebra" onclick="openModal(this)" />
       <p>A Álgebra é o ramo da Matemática que lida com números e operações através de letras e símbolos. É fundamental para resolver equações e entender os padrões numéricos.</p>
       <a href="https://www.khanacademy.org/math/algebra" target="_blank">Saiba mais sobre Álgebra</a>
     </div>
@@ -137,6 +188,7 @@
     <!-- Seção Geometria -->
     <div class="topic">
       <h2>Geometria</h2>
+      <img src="mat1.PNG" alt="Geometria" onclick="openModal(this)" />
       <p>A Geometria estuda as propriedades das figuras e formas no espaço, como pontos, linhas, superfícies e sólidos. É essencial para a arquitetura, engenharia e design.</p>
       <a href="https://www.khanacademy.org/math/geometry" target="_blank">Saiba mais sobre Geometria</a>
     </div>
@@ -144,6 +196,7 @@
     <!-- Seção Cálculo -->
     <div class="topic">
       <h2>Cálculo</h2>
+      <img src="mat33.PNG" alt="Cálculo" onclick="openModal(this)" />
       <p>O Cálculo é o estudo das taxas de variação e das mudanças. Ele é amplamente utilizado em física, economia e computação, sendo a base para muitas descobertas científicas.</p>
       <a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Saiba mais sobre Cálculo</a>
     </div>
@@ -151,6 +204,7 @@
     <!-- Seção Estatística -->
     <div class="topic">
       <h2>Estatística</h2>
+      <img src="mat4.PNG" alt="Estatística" onclick="openModal(this)" />
       <p>A Estatística é o ramo da Matemática que analisa dados. Ela nos ajuda a entender tendências, fazer previsões e tomar decisões baseadas em informações quantitativas.</p>
       <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Saiba mais sobre Estatística</a>
     </div>
@@ -158,21 +212,45 @@
     <!-- Seção Probabilidade -->
     <div class="topic">
       <h2>Probabilidade</h2>
+      <img src="mat5.PNG" alt="Probabilidade" onclick="openModal(this)" />
       <p>A Probabilidade estuda a chance de eventos acontecerem. É amplamente aplicada em jogos de azar, análise de risco e ciências atuariais, entre outros campos.</p>
       <a href="https://www.khanacademy.org/math/probability" target="_blank">Saiba mais sobre Probabilidade</a>
     </div>
 
-    <!-- Seção Números Primos -->
+    <!-- Seção Elipse -->
     <div class="topic">
-      <h2>Números Primos</h2>
-      <p>Os Números Primos são aqueles que têm exatamente dois divisores positivos: 1 e ele mesmo. São fundamentais para a Teoria dos Números e a criptografia moderna.</p>
-      <a href="https://www.khanacademy.org/math/arithmetic/x8910e6a7d11e5c61:prime-factorization" target="_blank">Saiba mais sobre Números Primos</a>
+      <h2>Elipse</h2>
+      <img src="mat6.PNG" alt="Números Primos" onclick="openModal(this)" />
+      <p>A elipse é uma figura plana classificada como uma cônica, isso porque ela pode ser obtida da secção de um plano em um cone. Encontrar uma figura plana com forma de elipse é bastante comum no dia a dia. Ela foi amplamente estudada para explicar a movimentação dos planetas ao redor do Sol, pois as órbitas desses astros são elipses.
+</p>
+      <a href="https://brasilescola.uol.com.br/matematica/elipse.htm" target="_blank">Saiba mais sobre Elipse</a>
     </div>
+  </div>
+
+  <!-- Modal para exibir a imagem ampliada -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
   </div>
 
   <footer>
     <p>&copy; 2024 Matemática: O Mundo dos Números | <a href="#">Política de Privacidade</a></p>
   </footer>
 
+  <script>
+    // Função para abrir o modal com a imagem ampliada
+    function openModal(img) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 </html>

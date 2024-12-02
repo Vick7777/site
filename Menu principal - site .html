@@ -11,6 +11,8 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #4a90e2, #50c9c3);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -18,6 +20,18 @@
             flex-direction: column;
             text-align: center;
             min-height: 100vh;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* Título da página */
@@ -119,7 +133,12 @@
 
         <!-- Grid de blocos -->
         <div class="page-grid">
-            <a href="file:///C:/Users/Vitoria/Downloads/meu%20curriculo%202%20(1).html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/p%C3%A1gina%20pessoal.html">
+                <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.L4alh2ekQNq-MV0wSnos5QHaD6?rs=1&pid=ImgDetMain');">
+                    <div class="title">Página Pessoal</div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/meu%20curriculo%202%20(1).html">
                 <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.q0ijz1r1qlKGJC_tyo6AxgHaEK?rs=1&pid=ImgDetMain');">
                     <div class="title">Currículo Pessoal</div>
                 </div>
@@ -129,37 +148,37 @@
                     <div class="title">Portifólio Pessoal</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/%C3%81reas%20do%20saber%20(1).html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/%C3%81reas%20do%20saber%20(1).html">
                 <div class="page-block" style="background-image: url('https://testvocacional.gratis/wp-content/uploads/2023/03/areas-de-conocimiento.jpg');">
                     <div class="title">Áreas do Saber</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Linguaguens.html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Linguaguens.html">
                 <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.FgKWDcfzTwevLjhiiWJQTAHaD4?rs=1&pid=ImgDetMain');">
                     <div class="title">Linguaguens</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Matem%C3%A1tica.html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Matem%C3%A1tica.html">
                 <div class="page-block" style="background-image: url('https://image.freepik.com/vetores-gratis/fundo-de-quadro-realista-de-matematica_23-2148166959.jpg');">
                     <div class="title">Matemática</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Internet%20das%20Coisas.html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Internet%20das%20Coisas.html">
                 <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP.kGpQOdtFm73hVjYTKa9IDAHaE6?w=512&h=340&rs=1&pid=ImgDetMain');">
                     <div class="title">Internet das Coisas</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Ci%C3%AAncias%20da%20Natureza.html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Ci%C3%AAncias%20da%20Natureza.html">
                 <div class="page-block" style="background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2019/11/ciencias-da-natureza.jpg');">
                     <div class="title">Ciênciasda Natureza</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Ci%C3%AAncias%20Humanas.html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Ci%C3%AAncias%20Humanas.html">
                 <div class="page-block" style="background-image: url('https://th.bing.com/th/id/OIP._jAa4OOUpqKA4xIhrfxT2wHaE7?w=800&h=533&rs=1&pid=ImgDetMain');">
                     <div class="title">Ciências Humanas</div>
                 </div>
             </a>
-            <a href="file:///C:/Users/Vitoria/Downloads/Formul%C3%A1rio%20de%20satisfa%C3%A7%C3%A3o%20(1).html">
+            <a href="file:///C:/Users/Vitoria/Downloads/portfolio/Formul%C3%A1rio%20de%20satisfa%C3%A7%C3%A3o%20(1).html">
                 <div class="page-block" style="background-image: url('https://1.bp.blogspot.com/-vnqoOWnDHT8/YOT0eOo1woI/AAAAAAAACeg/T034vGrBaTc26jPSPuwY4UmyC-SpH36FwCLcBGAsYHQ/w1200-h630-p-k-no-nu/download.jpg');">
                     <div class="title">Formulário de Satisfação</div>
                 </div>
@@ -169,3 +188,4 @@
 
 </body>
 </html>
+

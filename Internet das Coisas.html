@@ -117,6 +117,42 @@
         width: 100%;
       }
     }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+
+    .image-container img {
+      width: 38%; /* Tamanho das imagens reduzido de 48% para 38% */
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo do vídeo */
+    .video-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e4f0f7;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container h2 {
+      font-size: 2em;
+      color: #00c6ff;
+      margin-bottom: 20px;
+    }
+
+    .video-container iframe {
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -170,10 +206,24 @@
     </div>
   </div>
 
+  <!-- Seção do vídeo -->
+  <div class="video-container">
+    <h2>Assista ao Vídeo: Internet das Coisas</h2>
+    <iframe src="https://www.youtube.com/embed/hNeXt2sOyMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Imagens criativas sobre IoT -->
+  <div class="image-container">
+    <img src="shared image (7).jpg" alt="Dispositivos Conectados">
+    <img src="shared image (7)11.jpg" alt="Automação Residencial">
+  </div>
+
   <footer>
     <p>&copy; 2024 Curso Técnico em Internet das Coisas | <a href="#">Política de Privacidade</a></p>
   </footer>
 
 </body>
 </html>
+
+
 

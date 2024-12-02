@@ -5,7 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Curso de Ciências da Natureza</title>
-  <link rel="stylesheet" href="stylesv.css"> <!-- Link para o arquivo CSS externo -->
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .feature {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .feature h2 {
+      font-size: 1.8em;
+      margin-top: 0;
+      color: #4CAF50;
+    }
+
+    .feature p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .feature ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .feature a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .feature img {
+      width: 300px; /* Imagens com largura maior, 300px */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 8px;
+      margin-top: 15px;
+      display: block; /* Centraliza a imagem */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    /* Estilo do documentário */
+    .documentary {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .documentary iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      display: block; /* Garante que o iframe ocupe 100% da largura */
+      margin-bottom: 20px; /* Adiciona um espaço abaixo do vídeo */
+    }
+
+    /* Adiciona uma classe para garantir que o texto esteja visível após o vídeo */
+    .documentary p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      padding-top: 10px; /* Espaçamento entre o vídeo e o texto */
+      margin-top: 10px; /* Garante que o texto comece abaixo do vídeo */
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,6 +140,9 @@
       <h2>O que são Ciências da Natureza?</h2>
       <p>As Ciências da Natureza são um campo de estudo que engloba as ciências que investigam os fenômenos naturais. Elas se dividem em áreas como Física, Química, Biologia e Geociências, com o objetivo de compreender e explicar as leis que governam o universo natural.</p>
       <a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncias_da_natureza" target="_blank">Saiba mais sobre Ciências da Natureza</a>
+      <!-- Imagem com legenda -->
+      <img src="fis.jpg" alt="Ciências da Natureza" />
+      <p class="caption">Explorando os fenômenos naturais nas Ciências da Natureza.</p>
     </div>
 
     <!-- Áreas do Curso -->
@@ -30,10 +153,12 @@
           <li>Física: O estudo das leis do movimento, da energia e da matéria.</li>
           <li>Química: A investigação das substâncias, suas propriedades e reações.</li>
           <li>Biologia: O estudo dos seres vivos e seus processos vitais.</li>
-          <li>Geociências: A exploração dos processos que moldam a Terra e seu ambiente.</li>
         </ul>
       </p>
       <a href="https://www.universia.com.br/pt-br/o-que-sao/ciencias-da-natureza" target="_blank">Explore as áreas do curso</a>
+      <!-- Imagem com legenda -->
+      <img src="bio.jpg" alt="Áreas do Curso" />
+      <p class="caption">Áreas de estudo abrangendo Física, Química, Biologia e Geociências.</p>
     </div>
 
     <!-- Possibilidades de Carreira -->
@@ -49,6 +174,9 @@
         </ul>
       </p>
       <a href="https://www.careerbuilder.com/" target="_blank">Veja oportunidades de carreira</a>
+      <!-- Imagem com legenda -->
+      <img src="lab2.jpg" alt="Carreira em Ciências da Natureza" />
+      <p class="caption">Carreiras variadas para profissionais formados nas Ciências da Natureza.</p>
     </div>
 
     <!-- Metodologia de Ensino -->
@@ -56,6 +184,9 @@
       <h2>Metodologia de Ensino</h2>
       <p>No curso de Ciências da Natureza, os alunos têm uma abordagem prática e teórica. Aulas de laboratório, estudos de campo e a análise de casos reais são fundamentais para a aprendizagem. O foco está em preparar os alunos para aplicarem o conhecimento científico em diversas áreas.</p>
       <a href="https://www.educacao.sc.gov.br/" target="_blank">Conheça a metodologia de ensino</a>
+      <!-- Imagem com legenda -->
+      <img src="lab4.jpg" alt="Metodologia de Ensino" />
+      <p class="caption">Aulas práticas e estudos de campo para uma aprendizagem ativa.</p>
     </div>
 
     <!-- A Importância do Curso -->
@@ -77,7 +208,7 @@
   <div class="documentary">
     <h2>Documentário sobre as Ciências da Natureza</h2>
     <iframe src="https://www.youtube.com/embed/yeTcRa8TfsQ" title="Documentário sobre as Ciências da Natureza"></iframe>
-    <p>Este documentário explora a importância das Ciências da Natureza no contexto atual, destacando como as descobertas científicas têm moldado a sociedade e o impacto das nossas ações no planeta. Além disso, apresenta o papel fundamental dessas áreas na solução de problemas globais como as mudanças climáticas, a preservação ambiental e a segurança alimentar. Aprofunde-se no entendimento de como a ciência pode ser uma força transformadora para um futuro mais sustentável e equilibrado.</p>
+    <p>O documentário sobre armas nucleares e os dilemas éticos e políticos examina a história, os impactos e as implicações morais das armas de destruição em massa no cenário global...</p>
   </div>
 
   <footer>
@@ -86,3 +217,7 @@
 
 </body>
 </html>
+
+
+
+

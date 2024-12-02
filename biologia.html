@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Criativa com Vídeos, Imagens e Interatividade</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px; /* Limita a largura máxima */
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .gallery-item {
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img, .gallery video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, z-index 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .gallery-item:hover p {
+            display: block;
+        }
+
+        .gallery-item.active {
+            transform: scale(1.5);
+            z-index: 1000; /* Faz com que o item clicado apareça acima dos outros */
+        }
+
+        .video-section {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            margin-top: -50px; /* Movi a seção para cima ainda mais */
+            max-width: 1200px; /* Limita a largura máxima */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .video-section iframe {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px; /* Espaçamento entre vídeos */
+        }
+
+        .video-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            width: 100%;
+        }
+
+        /* Animation for images */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Explorando Mídias Criativas
+</header>
+
+<div class="gallery">
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <img src="https://via.placeholder.com/400x250" alt="Imagem 1">
+        <p>Imagem 1 - Descrição Criativa</p>
+    </div>
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <img src="https://via.placeholder.com/400x250" alt="Imagem 2">
+        <p>Imagem 2 - Beleza Natural</p>
+    </div>
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <img src="https://via.placeholder.com/400x250" alt="Imagem 3">
+        <p>Imagem 3 - Arte Moderna</p>
+    </div>
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+        <p>Vídeo - Exemplificando Interatividade</p>
+    </div>
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
+        <p>Vídeo - Explorando o Mundo</p>
+    </div>
+    <div class="gallery-item fade-in" onclick="toggleActive(this)">
+        <img src="https://via.placeholder.com/400x250" alt="Imagem 4">
+        <p>Imagem 4 - Cenário Noturno</p>
+    </div>
+</div>
+
+<div class="video-section">
+    <h2>Vídeos Criativos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="fade-in"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="fade-in"></iframe>
+</div>
+
+<footer class="footer">
+    Criado com amor em 2024 &copy; Todos os direitos reservados
+</footer>
+
+<script>
+    // Função JavaScript para adicionar/remover a classe 'active' ao clicar em um item
+    function toggleActive(element) {
+        // Verifica se o item já está ativo
+        if (element.classList.contains('active')) {
+            // Se estiver, remove a classe 'active'
+            element.classList.remove('active');
+        } else {
+            // Caso contrário, adiciona a classe 'active' ao item
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => item.classList.remove('active')); // Remove a classe de todos os outros itens
+            element.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
